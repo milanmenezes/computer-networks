@@ -83,7 +83,7 @@ if flag:
 			#first address
 			if(netid[3]=='255'):
 				if(netid[2]=='255'):
-					if(netid=='255'):
+					if(netid[1]=='255'):
 						range1[0]=str(eval(range1[0])+1)
 					else:
 						range1[1]=str(eval(range1[1])+1)
@@ -95,7 +95,7 @@ if flag:
 			#last address
 			if(bid[3]=='0'):
 				if(bid[2]=='0'):
-					if(bid=='0'):
+					if(bid[1]=='0'):
 						range2[0]=str(eval(range2[0])-1)
 					else:
 						range2[1]=str(eval(range2[1])-1)

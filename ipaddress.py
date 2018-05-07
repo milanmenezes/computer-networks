@@ -42,16 +42,16 @@ if flag:
 		print "Class B: Private Address"
 
 	elif(ip[0]=='192' and ip[1]=='168' and classfull):
-		print "Class A: Private Address"
+		print "Class C: Private Address"
 
 	else:
 		if classfull:
 			print "Classfull address"
-			if eval(ip[3])<126:
+			if eval(ip[0])<=126:
 				print "Class A"
-			elif eval(ip[3])<191:
+			elif eval(ip[0])<=191:
 				print "Class B"
-			elif eval(ip[3])<223:
+			elif eval(ip[0])<=223:
 				print "Class C"
 		else:
 			print "Classless address"
